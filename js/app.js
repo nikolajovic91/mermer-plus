@@ -1,16 +1,17 @@
-// responsive navigation
 function navigation() {
-  var nav = document.getElementById("myTopnav");
-  if (nav.className === "topnav") {
-    nav.className += " responsive";
-    document.getElementById("myTopnav").style.height = "100%";
+  var topnav = document.getElementById("myTopnav");
+  var nav = document.querySelector(".nav");
+  if (topnav.className === "topnav") {
+    topnav.className += " responsive";
+    topnav.style.height = "100%";
+    nav.style.display = "flex";
   } else {
-    nav.className = "topnav";
+    topnav.className = "topnav";
+    nav.style.display = "none";
   }
 }
 
-// typewriter efect on home page
-var TxtType = function(el, toRotate, period) {
+var TxtType = function (el, toRotate, period) {
   this.toRotate = toRotate;
   this.el = el;
   this.loopNum = 0;
@@ -20,7 +21,7 @@ var TxtType = function(el, toRotate, period) {
   this.isDeleting = false;
 };
 
-TxtType.prototype.tick = function() {
+TxtType.prototype.tick = function () {
   var i = this.loopNum % this.toRotate.length;
   var fullTxt = this.toRotate[i];
 
@@ -48,12 +49,12 @@ TxtType.prototype.tick = function() {
     delta = 500;
   }
 
-  setTimeout(function() {
+  setTimeout(function () {
     that.tick();
   }, delta);
 };
 
-window.onload = function() {
+window.onload = function () {
   var elements = document.getElementsByClassName("typewrite");
   for (var i = 0; i < elements.length; i++) {
     var toRotate = elements[i].getAttribute("data-type");
@@ -69,35 +70,6 @@ window.onload = function() {
   document.body.appendChild(css);
 };
 
-
-// MAP NAVIGATION
-function initMap() {
-  var uluru = {
-    lat: 44.616858,
-    lng: 20.900181
-    // lat: 44.6444183,
-    // lng: 20.9211924
-  };
-  var map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 15,
-    center: uluru
-  });
-  var marker = new google.maps.Marker({
-    position: uluru,
-    map: map
-  });
-}
-
-function addInfoWindow(marker, message) {
-  var infoWindow = new google.maps.InfoWindow({
-    content: message
-  });
-  google.maps.event.addListener(marker, "click", function() {
-    infoWindow.open(map, marker);
-  });
-}
-
-// IMAGE SLIDER
 var slideIndex = 1;
 showSlides(slideIndex);
 
@@ -126,8 +98,10 @@ function showSlides(n) {
   for (i = 0; i < dots.length; i++) {
     dots[i].className = dots[i].className.replace(" active", "");
   }
-  slides[slideIndex - 1].style.display = "block";
-  dots[slideIndex - 1].className += " active";
-  captionText.innerHTML = dots[slideIndex - 1].alt;
-}
 
+  if (slides.length) {
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " active";
+    captionText.innerHTML = dots[slideIndex - 1].alt;
+  }
+}

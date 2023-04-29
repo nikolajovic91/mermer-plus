@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="icon" href="../assets/favicon.ico" type="image/x-icon"/>
+    <link rel="icon" href="../assets/favicon.ico" type="image/x-icon" />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
@@ -23,45 +23,45 @@
     <div class="main viewport">
       <div class="topnav" id="myTopnav">
         <div class="logo">
-          <img src="../assets/logo.png" alt="logo" />
+          <img src="../assets/logo-red.png" alt="logo" />
           <a
             href="javascript:void(0);"
-            style="font-size:15px;"
+            style="font-size: 30px"
             class="icon"
             onclick="navigation()"
-            ><img src="../assets/hamburger.png" alt="icon"></a
-          >
+            ><i class="fas fa-bars"></i
+          ></a>
         </div>
         <div class="nav">
-          <a href="../index.html"><i class="fas fa-home"></i> Naslovna</a>
-          <a href="./about.html"><i class="fas fa-users"></i> O nama</a>
-          <div class="dropdown">
-            <button class="dropbtn">
-              <i class="fas fa-briefcase"></i>
-              Nasi radovi
-              <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content">
-              <a href="./monument.html">Spomenici</a>
-              <a href="./interior.html">Enterijeri</a>
+          <div>
+            <a href="../index.html"><i class="fas fa-home"></i> Naslovna</a>
+            <a href="./about.html"><i class="fas fa-users"></i> O nama</a>
+            <div class="dropdown">
+              <button class="dropbtn">
+                <i class="fas fa-briefcase"></i>
+                Nasi radovi
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="./monument.html">Spomenici</a>
+                <a href="./interior.html">Enterijeri</a>
+              </div>
             </div>
-          </div>
-          <div class="dropdown">
-            <button class="dropbtn">
-              <i class="fas fa-screwdriver"></i>
-              Materijali
-              <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content">
-              <a href="./granite.html">Granit</a>
-              <a href="./marble.html">Mermer</a>
-              <a href="./quartz.html">Kvarc</a>
+            <div class="dropdown">
+              <button class="dropbtn">
+                <i class="fas fa-screwdriver"></i>
+                Materijali
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="./granite.html">Granit</a>
+                <a href="./marble.html">Mermer</a>
+                <a href="./quartz.html">Kvarc</a>
+              </div>
             </div>
+
+            <a href="./contact.html"><i class="fas fa-phone"></i> Kontakt</a>
           </div>
-          
-          <a href="./contact.html"
-            ><i class="fas fa-phone"></i> Kontakt</a
-          >
         </div>
       </div>
 
@@ -86,67 +86,79 @@
           prilikom planiranja.
         </p>
 
-        <div class="container">
+        <div class="marble-images">
+          <img src="../assets/materials/mermer/Mermer-Kavala.jpg" alt="" />
+          <img src="../assets/materials/mermer/daino-reale.jpg" alt="" />
+          <img src="../assets/materials/mermer/emperador-dark.jpg" alt="" />
+          <img src="../assets/materials/mermer/emperador-light.jpg" alt="" />
+          <img src="../assets/materials/mermer/fanky-gold.jpg" alt="" />
+          <img src="../assets/materials/mermer/karara.jpg" alt="" />
+          <img src="../assets/materials/mermer/nero-marquina.jpg" alt="" />
+          <img src="../assets/materials/mermer/sunny-beige.jpg" alt="" />
+          <img src="../assets/materials/mermer/verde-gvatemala.jpg" alt="" />
+        </div>
+
+        <!-- <div class="container">
           <div class="mySlides">
             <img
               src="../assets/materials/mermer/Mermer-Kavala.jpg"
-              style="width:100%"
+              style="width: 100%"
             />
           </div>
 
           <div class="mySlides">
             <img
               src="../assets/materials/mermer/daino-reale.jpg"
-              style="width:100%"
+              style="width: 100%"
             />
           </div>
 
           <div class="mySlides">
             <img
               src="../assets/materials/mermer/emperador-dark.jpg"
-              style="width:100%"
+              style="width: 100%"
             />
           </div>
 
           <div class="mySlides">
             <img
               src="../assets/materials/mermer/emperador-light.jpg"
-              style="width:100%"
+              style="width: 100%"
             />
           </div>
 
           <div class="mySlides">
             <img
               src="../assets/materials/mermer/fanky-gold.jpg"
-              style="width:100%"
+              style="width: 100%"
             />
           </div>
 
           <div class="mySlides">
             <img
               src="../assets/materials/mermer/karara.jpg"
-              style="width:100%"
+              style="width: 100%"
             />
           </div>
 
           <div class="mySlides">
             <img
               src="../assets/materials/mermer/nero-marquina.jpg"
-              style="width:100%"
+              style="width: 100%"
             />
           </div>
 
           <div class="mySlides">
             <img
               src="../assets/materials/mermer/sunny-beige.jpg"
-              style="width:100%"
+              style="width: 100%"
             />
           </div>
 
           <div class="mySlides">
             <img
               src="../assets/materials/mermer/verde-gvatemala.jpg"
-              style="width:100%"
+              style="width: 100%"
             />
           </div>
 
@@ -162,7 +174,7 @@
               <img
                 class="demo cursor"
                 src="../assets/materials/mermer/Mermer-Kavala.jpg"
-                style="width:100%"
+                style="width: 100%"
                 onclick="currentSlide(1)"
                 alt="KAVALA"
               />
@@ -171,7 +183,7 @@
               <img
                 class="demo cursor"
                 src="../assets/materials/mermer/daino-reale.jpg"
-                style="width:100%"
+                style="width: 100%"
                 onclick="currentSlide(2)"
                 alt="DAINO REALE"
               />
@@ -181,7 +193,7 @@
               <img
                 class="demo cursor"
                 src="../assets/materials/mermer/emperador-dark.jpg"
-                style="width:100%"
+                style="width: 100%"
                 onclick="currentSlide(3)"
                 alt="DARK EMPERADOR"
               />
@@ -191,7 +203,7 @@
               <img
                 class="demo cursor"
                 src="../assets/materials/mermer/emperador-light.jpg"
-                style="width:100%"
+                style="width: 100%"
                 onclick="currentSlide(4)"
                 alt="LIGHT EMPERADOR"
               />
@@ -201,7 +213,7 @@
               <img
                 class="demo cursor"
                 src="../assets/materials/mermer/fanky-gold.jpg"
-                style="width:100%"
+                style="width: 100%"
                 onclick="currentSlide(5)"
                 alt="GOLD FANKY"
               />
@@ -210,7 +222,7 @@
               <img
                 class="demo cursor"
                 src="../assets/materials/mermer/karara.jpg"
-                style="width:100%"
+                style="width: 100%"
                 onclick="currentSlide(6)"
                 alt="KARARA"
               />
@@ -219,7 +231,7 @@
               <img
                 class="demo cursor"
                 src="../assets/materials/mermer/nero-marquina.jpg"
-                style="width:100%"
+                style="width: 100%"
                 onclick="currentSlide(7)"
                 alt="NERO MARQUINA"
               />
@@ -228,7 +240,7 @@
               <img
                 class="demo cursor"
                 src="../assets/materials/mermer/sunny-beige.jpg"
-                style="width:100%"
+                style="width: 100%"
                 onclick="currentSlide(8)"
                 alt="SUNNY BEIGE"
               />
@@ -237,21 +249,22 @@
               <img
                 class="demo cursor"
                 src="../assets/materials/mermer/verde-gvatemala.jpg"
-                style="width:100%"
+                style="width: 100%"
                 onclick="currentSlide(9)"
                 alt="VERDE GVATEMALA"
               />
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
     <div class="footer">
       <div>Kolarski put 144, Smederevo</div>
-      <div>Zoran: 065 / 333 - 94 - 77</div>
+      <a href="tel:+381653339477">Zoran: 065 / 333 - 94 - 77</a>
       <div>
-          <a href="mailto:kamenorezacmermerplus@gmail.com">kamenorezacmermerplus@gmail.com</a>
-        
+        <a href="mailto:kamenorezacmermerplus@gmail.com"
+          >kamenorezacmermerplus@gmail.com</a
+        >
       </div>
     </div>
   </body>
